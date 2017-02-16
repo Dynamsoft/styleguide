@@ -41,11 +41,11 @@ a.bluelink:hover { color: #61c2ec; }
 /*====================================== content ==================================*/
 .container { width: 1100px; margin: 0 auto; }
 #main { padding: 80px 0 0 0; width: 100%; height: auto; }
-#sideBar { float: left; width: 20%; }
-#mainContent { float: left; padding: 75px 0 0 0; width: 80%; }
+#sideBar { float: left; width: 215px; }
+#mainContent { float: left; padding: 75px 0 0 0; width: 855px; }
 @media (min-width: 1150px) {
 #sideBar { position: fixed; top: 60px; }
-#mainContent { margin-left: 20%; padding: 55px 0 0 0; }
+#mainContent { margin-left: 215px; padding: 55px 0 0 0; }
 }
 #mainContent .section:last-child { border-bottom: none; }
 #sideBar .logo-ds a { display: block; width: 159px; height: 39px; background: url(../img-icon/logo-dynamsoft-159X39.svg) no-repeat left center; background-size: cover; }
