@@ -94,9 +94,9 @@ a#toTop:hover { background-position: background: center -45px;
 /*====== Button ======*/
 #sectionButton h2 { margin-bottom: 10px; }
 #sectionButton .ct-lt { float: left; width: 280px; }
-#sectionButton .ct-rt { float: left; width: 576px; }
+#sectionButton .ct-rt { float: left; width: 575px; }
 #sectionButton .structrue { width: 100%; }
-#sectionButton .structrue li { margin-bottom: 5px; font-size: 14px; }
+#sectionButton .structrue li { margin-bottom: 23px; font-size: 14px; }
 #sectionButton .structrue li:last-child { margin-bottom: 0; }
 #sectionButton .structrue li.type-height { margin: 22px 0 18px; }
 #sectionButton .structrue li span { display: block; font-size: 14px; color: #aaa; }
@@ -107,7 +107,7 @@ a#toTop:hover { background-position: background: center -45px;
 #sectionButton .state li:last-child { margin-bottom: 0; }
 #sectionButton li .d-btn { width: 100%; padding: 0; }
 #sectionButton .default, #sectionButton .hover { width: 150px; }
-#sectionButton .hover { margin: 0 43px; }
+#sectionButton .hover { margin: 0 42px; }
 #sectionButton .state .minority { background: #fe8e14; width: 190px; padding: 33px 20px 14px; margin-top: 53px; border-radius: 3px; }
 #sectionButton .state .minority li { margin-bottom: 20px; }
 #sectionButton .combination { padding-top: 60px; }
