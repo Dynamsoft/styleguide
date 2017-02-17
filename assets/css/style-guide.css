@@ -7,18 +7,40 @@
 *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 html { font-size: 10px; color: #606060; font-family: OpenSans-Regular; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { font-size: 1.6rem; line-height: 26px; height: 100%; }
-body, div, ul, li, p, h1, h2, h3 { margin: 0; padding: 0; }
+body, div, ul, li, p, h1, h2, h3, h4 { margin: 0; padding: 0; }
 ul, li, ol { list-style: none; }
 a { text-decoration: none; }
-h1 { font-size: 4.0rem; line-height: 60px; font-family: OpenSans-Light; font-weight: normal; }
-h2 { font-size: 3.6rem; line-height: 50px; font-family: OpenSans-Light; font-weight: normal; color: #444; }
-h3, .h3 { font-size: 24px; font-size: 2.4rem; line-height: 36px; font-family: OpenSans-Light; font-weight: normal; color: #444; }
 a.bluelink { color: #50a8e1; cursor: pointer; }
 a.bluelink:hover { color: #61c2ec; }
 .container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; }
 .container:after, .clearfix:after { content: ''; display: table; clear: both; }
 .img-responsive { display: block; max-width: 100%; height: auto; }
 .mauto { margin-left: auto; margin-right: auto; }
+.fl { float: left; }
+.fr { float: right; }
+.default-radius { border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; }
+h1, .h1 { font-family: OpenSans-Light; color: #444; font-weight: normal; }
+h2, .h2 { font-family: OpenSans-Light; color: #444; font-weight: normal; }
+h3, .h3 { font-family: OpenSans-Light; color: #444; font-weight: normal; }
+h4, .h4 { font-family: OpenSans-Semibold; color: #444; font-weight: normal; }
+@media screen and (max-width: 767px) {
+h1, .h1 { font-size: 30px; font-size: 3.0rem; line-height: 45px; }
+h2, .h2 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
+h3, .h3 { font-size: 18px; font-size: 1.8rem; line-height: 27px; }
+h4, .h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
+}
+@media (min-width: 768px) {
+h1, .h1 { font-size: 36px; font-size: 3.6rem; line-height: 54px; }
+h2, .h2 { font-size: 30px; font-size: 3.0rem; line-height: 45px; }
+h3, .h3 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
+h4, .h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
+}
+@media (min-width: 992px) {
+h1, .h1 { font-size: 40px; font-size: 4.0rem; line-height: 60px; }
+h2, .h2 { font-size: 36px; font-size: 3.6rem; line-height: 54px; }
+h3, .h3 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
+h4, .h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
+}
 /*================= d-btn ======================*/
 .d-btn { display: inline-block; padding: 0 25px; height: 38px; line-height: 32px; color: #fe8e14; font-family: OpenSans-Semibold; font-size: 14px; text-align: center; cursor: pointer; border: solid 2px #fe8e14; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
 .d-btn:link, .d-btn:visited { color: #fe8e14; }
@@ -96,7 +118,8 @@ a#toTop:hover { background-position: background: center -45px;
 #sectionButton .ct-lt { float: left; width: 280px; }
 #sectionButton .ct-rt { float: left; width: 575px; }
 #sectionButton .structrue { width: 100%; }
-#sectionButton .structrue li { margin-bottom: 23px; font-size: 14px; }
+#sectionButton .structrue li { margin-bottom: 5px; font-size: 14px; }
+#sectionButton .structrue li:first-child { margin-bottom: 23px; }
 #sectionButton .structrue li:last-child { margin-bottom: 0; }
 #sectionButton .structrue li.type-height { margin: 22px 0 18px; }
 #sectionButton .structrue li span { display: block; font-size: 14px; color: #aaa; }
@@ -121,21 +144,160 @@ a#toTop:hover { background-position: background: center -45px;
 #sectionButton .combination .minority li { float: left; width: 50%; text-align: center; }
 #sectionButton .combination .minority li .d-btn { width: 80%; }
 /*====== Form ======*/
-input[type="text" i]:disabled { background:#f5f5f5;}
-input.default { background:#f5fafe;}
-input { padding-left: 20px; height: 38px; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; outline: none; font-size: 14px; font-size: 1.4rem; line-height: 24px; color: #aaa; }
+input[type="text" i]:disabled {
+background:#f5f5f5;
+}
+input.default { background: #f5fafe; }
+input { padding-left: 5px; height: 38px; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; outline: none; font-size: 14px; font-size: 1.4rem; line-height: 24px; color: #aaa; }
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus { color: #606060; border-color: #50a8e1; box-shadow: 0 0 3px #67b3e4; -webkit-box-shadow: 0 0 3px #67b3e4; -moz-box-shadow: 0 0 3px #67b3e4; }
 #sectionForm table { margin-top: 50px; width: 100%; }
 #sectionForm td { padding-bottom: 28px; }
 #sectionForm td:nth-child(2) { padding-left: 3%; padding-right: 3%; }
-#sectionForm td input[type="text"] { width: 100%; }
+#sectionForm td input[type="text"] { width: 100%; padding-left: 20px; }
 #sectionForm td input.focus { color: #606060; border-color: #50a8e1; box-shadow: 0 0 3px #67b3e4; -webkit-box-shadow: 0 0 3px #67b3e4; -moz-box-shadow: 0 0 3px #67b3e4; }
 #sectionForm td input.error { color: #606060; border-color: #e05f51; box-shadow: 0 0 3px #e8786c; -webkit-box-shadow: 0 0 3px #e8786c; -moz-box-shadow: 0 0 3px #e8786c; }
-#sectionForm .a-search { position:relative;}
-#sectionForm .a-search a { position:absolute; right:10px; top:11px; color:#bbb; font-size:17px; }
-#sectionForm .input-file { padding-right:3%;}
-#sectionForm .input-file input { display:none; width:100%;}
-
-
-
-
+#sectionForm .a-search { position: relative; }
+#sectionForm .a-search a { position: absolute; right: 10px; top: 11px; color: #bbb; font-size: 17px; }
+#sectionForm .input-file { position: relative; padding-right: 3%; padding-bottom: 38px; }
+#sectionForm .input-file label { display: inline-block; height: 38px; width: 100%; }
+#sectionForm .input-file input.a-readonly { width: 82%; margin: 0; float: left; display: inline-block; border-color: #ccc; box-shadow: none; border-bottom-right-radius: 0; border-top-right-radius: 0; }
+#sectionForm .input-file input.a-brower { width: 18%; margin: 0; display: inline-block; padding: 0; background: #fff; color: #606060; border-left: none; border-bottom-left-radius: 0; border-top-left-radius: 0; }
+#sectionForm .input-file input[type="file"] { position: absolute; top: 0; left: 0; width: 96%; cursor: pointer; opacity: 0; filter:(Alpha=0);
+}
+<!--
+#sectionForm .dropDown select { position: relative; width: 100%; height: 38px; padding: 0 20px 0 18px; font-size: 14px; line-height: 36px; color: #aaa; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; outline: none; cursor: pointer; }
+-->
+#sectionForm td.dropDown { padding: 0; vertical-align: text-top; }
+#sectionForm .dropDown .a-click { position: relative; width: 100%; height: 38px; padding: 0 20px 0 20px; font-size: 14px; line-height: 36px; color: #aaa; border: 1px solid #ccc; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; cursor: pointer; }
+#sectionForm .dropDown .icon { position: absolute; right: 10px; top: 8px; color: #606060; }
+#sectionForm .dropDown-list { padding: 10px 0; width: 100%; height: 180px; border: 1px solid #ccc; border-top: none; }
+#sectionForm .dropDown-list li { padding: 0 20px; font-size: 14px; line-height: 32px; color: #606060; cursor: pointer; }
+#sectionForm .dropDown-list li:hover, #sectionForm .dropDown-list li.hover { background: #fff6ed; color: #fe8e14; }
+#sectionForm .pagenav { padding-bottom: 32px; }
+#sectionForm .pagenav li { float: left; margin-right: 12px; width: 40px; height: 40px; text-align: center; line-height: 40px; color: #606060; border: 1px solid #ddd; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; cursor: pointer; }
+#sectionForm .pagenav li:first-child { font-size: 30px; line-height: 34px; color: #aaa; }
+#sectionForm .pagenav li:last-child { margin-right: 0; font-size: 30px; line-height: 34px; color: #aaa; }
+#sectionForm .pagenav li.on { background: #fe8e14; border-color: #fe8e14; color: #fff; }
+#sectionForm .pagenav li.hover, #sectionForm .pagenav li:hover { background: #ffae38; border-color: #ffae38; color: #fff; }
+#sectionForm .pagenav li.omit { line-height: 34px; color: #606060; cursor: default; background: none; border: none; }
+#sectionForm .chk-rdo li { float: left; margin-right: 77px; }
+#sectionForm .chk-rdo li label { cursor: pointer; font-size: 14px; }
+#sectionForm .chk-rdo li label.not-allowed { cursor: not-allowed; }
+#sectionForm .chk-rdo li:last-child { margin-right: 0; }
+#sectionForm .chk-rdo input { margin: 0 9px 0 0; width: 20px; height: 20px; vertical-align: text-top; }
+#sectionForm .a-checkbox { margin-bottom: 10px; }
+#sectionForm .login-register { float: left; width: 330px; margin-top: 10px; }
+#sectionForm .login-register li { float: left; width: 165px; height: 48px; line-height: 46px; text-align: center; border: 1px solid #ccc; cursor: pointer; }
+#sectionForm .login-register li:first-child { border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+#sectionForm .login-register li:last-child { border-left: none; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+#sectionForm .login-register li.current { background: #ffae38; border-color: #ffae38; color: #fff; cursor: default; }
+#sectionForm .login-register .a-form { display: none; padding: 30px 35px 30px 25px; margin-top: 15px; border: 1px solid #ccc; }
+#sectionForm .login-register .a-form.current { display: block; }
+#sectionForm .login-register .a-form .item { margin-bottom: 18px; }
+#sectionForm .login-register .a-form .a-required { position: relative; }
+#sectionForm .login-register .a-form .a-required span { position: absolute; right: 9px; top: 40px; color: #999; font-size: 14px; }
+#sectionForm .login-register .a-form .item:last-child { margin: 30px 0 0 0; }
+#sectionForm .login-register .a-form .lbl { margin: 0 0 7px 0; font-size: 14px; line-height: 24px; }
+#sectionForm .login-register .a-form input { width: 100%; }
+#sectionForm .login-register .a-form .a-required input { padding-right: 15px; }
+#sectionForm .login-register .a-form .d-btn { width: 100%; }
+#sectionForm .tab-nav { float: left; margin: 10px 0 0 30px; width: 495px; height: 440px; border: 1px solid #ccc; }
+#sectionForm .tab-nav .a-nav { height: 48px; width: 100% }
+#sectionForm .tab-nav .a-nav li { float: left; width: 33.333%; height: 48px; text-align: center; line-height: 46px; border-bottom: 1px solid #ccc; background: #f5f5f5; font-family: OpenSans-Semibold; cursor: pointer; }
+#sectionForm .tab-nav .a-nav li:nth-child(2) { border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+#sectionForm .tab-nav .a-nav li.current { background: #fff; border-bottom: none; cursor: default; }
+#sectionForm .tab-nav .tab-content { display: none; }
+#sectionForm .tab-nav .tab-content.current { display: block; }
+#sectionForm .tab-nav .tab-content img { display: block; margin: 70px auto 0; }
+/*====== Typography ======*/
+#sectionTypography ul { float: left; width: 50%; margin-top: 40px; }
+#sectionTypography ul li { width: 100%; }
+#sectionTypography ul li:first-child { padding-bottom: 40px; }
+#sectionTypography ul li:last-child { margin-bottom: 0; }
+#sectionTypography ul li p { font-size: 14px; font-size: 1.4rem; line-height: 26px; color: #444; }
+#sectionTypography .item1 li:nth-child(2) { padding: 0 10px 16px; margin-bottom: 40px; width: 82%; font-size: 60px; line-height: 90px; text-align: center; border: 1px solid #ccc; color: #444; }
+#sectionTypography .item1 li .ct-lt { float: left; width: 95px; font-size: 60px; line-height: 64px; color: #444; }
+#sectionTypography .item1 li .ct-rt { float: left; width: 240px; font-size: 14px; line-height: 26px; color: #333; }
+#sectionTypography .item1 li:nth-child(3) { font-family: OpenSans-Light; }
+#sectionTypography .item1 li:nth-child(4) { font-family: OpenSans-Regular; margin: 40px 0; }
+#sectionTypography .item1 li:nth-child(5) { font-family: OpenSans-Semibold; }
+#sectionTypography .item2 { padding-left: 10%; }
+#sectionTypography .item2 li { margin-bottom: 16px; }
+#sectionTypography .item2 li:first-child { margin: 0; padding-bottom: 30px; }
+#sectionTypography .sm { margin-top: 55px; }
+#sectionTypography .sm li { margin-bottom: 15px; }
+#sectionTypography .sm li:first-child { margin: 0; padding-bottom: 20px; }
+#sectionTypography .sm h1 { font-size: 36px; font-size: 3.6rem; line-height: 54px; }
+#sectionTypography .sm h2 { font-size: 30px; font-size: 3.0rem; line-height: 45px; }
+#sectionTypography .sm h3 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
+#sectionTypography .sm h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
+#sectionTypography .xs { margin-top: 55px; padding-left: 10%; }
+#sectionTypography .xs li { margin-bottom: 15px; }
+#sectionTypography .xs li:first-child { margin: 0; padding-bottom: 20px; }
+#sectionTypography .xs h1 { font-size: 30px; font-size: 3.0rem; line-height: 45px; }
+#sectionTypography .xs h2 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
+#sectionTypography .xs h3 { font-size: 18px; font-size: 1.8rem; line-height: 27px; }
+#sectionTypography .xs h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
+/*====== Iocn ======*/
+#sectionIcon h2 { margin-bottom: 40px; }
+#sectionIcon .resources dl { float: left; margin: 0 20px 20px 0; width: 150px; height: 160px; border: 1px solid #ddd; }
+#sectionIcon .resources dl.mr0 { margin-right: 0; }
+#sectionIcon .resources dt { margin-top: 40px; text-align: center; }
+#sectionIcon .resources .icon { display: inline-block; width: 45px; height: 45px; background: url(../img-icon/icon-resources-45x45.png) no-repeat center top; }
+#sectionIcon .resources dd { margin: 16px 0 0; font-size: 14px; font-size: 1.4rem; line-height: 24px; color: #444; text-align: center; }
+#sectionIcon .resources .faq .icon { background-position: center -45px; }
+#sectionIcon .resources .notes .icon { background-position: center -90px; }
+#sectionIcon .resources .browsers .icon { background-position: center -135px; }
+#sectionIcon .resources .edit .icon { background-position: center -180px; }
+#sectionIcon .resources .bootcamp .icon { background-position: center -225px; }
+#sectionIcon .resources .capture .icon { background-position: center -270px; }
+#sectionIcon .resources .centralized .icon { background-position: center -315px; }
+#sectionIcon .resources .security .icon { background-position: center -360px; }
+#sectionIcon .resources .faster .icon { background-position: center -405px; }
+#sectionIcon .resources .file .icon { background-position: center -450px; }
+#sectionIcon .resources .stable .icon { background-position: center -495px; }
+#sectionIcon .resources .effective .icon { background-position: center -540px; }
+#sectionIcon .resources .high .icon { background-position: center -585px; }
+#sectionIcon .resources .vss .icon { background-position: center -630px; }
+#sectionIcon .resources .item2 { margin-top: 33px; }
+#sectionIcon .resources .item2 .license .icon { background-position: center -675px; }
+#sectionIcon .resources .item2 .faq .icon { background-position: center -720px; }
+#sectionIcon .resources .item2 .notes .icon { background-position: center -765px; }
+#sectionIcon .resources .item2 .bootcamp .icon { background-position: center -810px; }
+#sectionIcon .resources .kb .icon { background-position: center -855px; }
+#sectionIcon .resources .guide .icon { background-position: center -900px; }
+#sectionIcon .resources .alliance .icon { background-position: center -945px; }
+#sectionIcon .resources .blog .icon { background-position: center -990px; }
+#sectionIcon .resources .news .icon { background-position: center -1035px; }
+#sectionIcon .resources .customers .icon { background-position: center -1080px; }
+#sectionIcon .resources .item3 { margin-top: 33px; }
+#sectionIcon .resources .email .icon { background-position: center -1125px; }
+#sectionIcon .resources .form .icon { background-position: center -1170px; }
+#sectionIcon .resources .chat .icon { background-position: center -1215px; }
+#sectionIcon .resources .phone .icon { background-position: center -1260px; }
+#sectionIcon .resources .home .icon { background-position: center -1305px; }
+#sectionIcon .srction2 { margin-top: 33px; }
+#sectionIcon .srction2 .item { float: left; width: 250px; height: 300px; border: 1px solid #ddd; }
+#sectionIcon .srction2 .rasterizing { margin: 0 40px; }
+#sectionIcon .srction2 .item .icon { margin-top: 35px; width: 100%; height: 54px; background: url(../img-icon/icn-roundness-54x54.png) no-repeat center -660px; }
+#sectionIcon .srction2 .rasterizing .icon { background-position: center -1200px; }
+#sectionIcon .srction2 .annotation .icon { background-position: center -780px; }
+#sectionIcon .srction2 .item .title { margin-top: 22px; font-size: 18px; font-size: 1.8rem; line-height: 29px; color: #444; text-align: center; font-family: OpenSans-Semibold; }
+#sectionIcon .srction2 .item .desc { margin-top: 8px; font-size: 14px; font-size: 1.4rem; line-height: 24px; text-align: left; }
+#sectionIcon .srction2 .item .link { margin-top: 20px; font-size: 14px; font-size: 1.4rem; line-height: 24px; text-align: center; }
+#sectionIcon .srction2 .barcode .desc { padding: 0 30px 0 57px; }
+#sectionIcon .srction2 .rasterizing .desc { padding: 0 30px 0 40px; }
+#sectionIcon .srction2 .annotation .desc { padding: 0 50px 23px 58px; }
+#sectionIcon .srction3 { margin-top: 40px; }
+#sectionIcon .srction3 .item { float: left; margin: 0 20px 20px 0; width: 150px; height: 160px; border: 1px solid #ddd; }
+#sectionIcon .srction3 .item.mr0 { margin-right: 0; }
+#sectionIcon .srction3 .item span { display: inline-block; margin: 53px 48px; width: 54px; height: 54px; background: url(../img-icon/icn-roundness-54x54.png) no-repeat center top; }
+#sectionIcon .srction3 .linux span { background-position: center -240px; }
+#sectionIcon .srction3 .windows span { background-position: center top; }
+#sectionIcon .srction3 .ios span { background-position: center -60px; }
+#sectionIcon .srction3 .android span { background-position: center -1020px; }
+#sectionIcon .srction3 .search span { background-position: center -840px; }
+#sectionIcon .srction3 .setting span { background-position: center -1260px; }
+#sectionIcon .srction3 .pc span { background-position: center -120px; }
+#sectionIcon .srction3 .barcode span { background-position: center -660px; }
+#sectionIcon .srction3 .rasterizing span { background-position: center -1200px; }
