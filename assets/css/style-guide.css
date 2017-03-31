@@ -37,7 +37,7 @@ h4, .h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
 }
 @media (min-width: 992px) {
 h1, .h1 { font-size: 40px; font-size: 4.0rem; line-height: 60px; }
-h2, .h2 { font-size: 36px; font-size: 3.6rem; line-height: 54px; }
+h2, .h2 { font-size: 32px; font-size: 3.2rem; line-height: 48px; }
 h3, .h3 { font-size: 24px; font-size: 2.4rem; line-height: 36px; }
 h4, .h4 { font-size: 16px; font-size: 1.6rem; line-height: 26px; }
 }
