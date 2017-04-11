@@ -349,7 +349,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 /*====== Feedback Info ======*/
 #feedbackInfo table { width: 100%; margin-top: 35px; }
 #feedbackInfo td { padding: 0 0 32px 0; }
-#feedbackInfo tr:last-child td { padding:0;}
+#feedbackInfo tr:last-child td { padding-bottom:0;}
 #feedbackInfo td:nth-child(1) { width: 38%; padding-right: 38px; }
 #feedbackInfo td:nth-child(2) { width: 3%; }
 #feedbackInfo td:nth-child(3) { width: 4%; }
