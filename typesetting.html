@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="General" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="location" content="CA, BC, Vancouver" />
+<meta name="googlebot" content="index, follow" />
+<meta name="revisit-after" content="7 days" />
+<meta name="resource-type" content="document" />
+<meta name="classification" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Dynamsoft" />
+<meta name="Keywords" content="Dynamsoft" />
+<title>Dynamsoft Style Guide</title>
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/style-guide.css"/>
+<link type="text/css" rel="shortcut icon" href="assets/img-icon/favicon.ico"/>
+<link type="text/css" rel="stylesheet" href="http://developer.dynamsoft.com/wp-content/themes/wen-business/assets/css/basis-bs.css"/>
+<link type="text/css" rel="stylesheet" href="http://developer.dynamsoft.com/wp-content/themes/wen-business/style.css"/>
+<script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="http://developer.dynamsoft.com/wp-content/themes/wen-business/assets/js/ds-jquery-bs.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="main">
+        <div class="container">
+            <div id="sideBar">
+                <h1 class="logo-ds"><a href="http://www.dynamsoft.com/"> </a></h1>
+                <ul id="anchorNav">
+                    <li class="on"><a class="bluelink" href="#tab-switch">Tab switch</a></li>
+                    <li><a class="bluelink" href="#products-logo">Products logo</a></li>
+                    <li><a class="bluelink" href="#color-palette">Color palette</a></li>
+                    <li><a class="bluelink" href="#section-button">Button</a></li>
+                    <li><a class="bluelink" href="#section-form">Form</a></li>
+                    <li><a class="bluelink" href="#section-typography">Typography</a></li>
+                    <li><a class="bluelink" href="#section-icon">Icon</a></li>
+                    <li><a class="bluelink" href="#section-video">Video</a></li>
+                    <li><a class="bluelink" href="#feedback-info">Feedback Info</a></li>
+                    <li><a class="bluelink" href="#section-illus">Illustration</a></li>
+                </ul>
+            </div>
+            <div id="mainContent">
+                <div id="tabSwitch" class="section"> <a name="tab-switch" id="tab-switch"></a>
+                    <h2>Tab switch</h2>
+                </div>
+                <div id="productsLogo" class="section"> <a name="products-logo" id="products-logo"></a>
+                    <h2>Products logo</h2>
+                </div>
+                <div id="colorPalette" class="section"> <a name="color-palette" id="color-palette"></a>
+                    <h2>Color palette</h2>
+                </div>
+                <div id="sectionButton" class="section"> <a name="section-button" id="section-button"></a>
+                    <h2>Button</h2>
+                </div>
+                <div id="sectionForm" class="section"> <a name="section-form" id="section-form"></a>
+                    <h2>Form</h2>
+                </div>
+                <div id="sectionTypography" class="section"> <a name="section-typography" id="section-typography"></a>
+                    <h2>Typography</h2>
+                </div>
+            </div>
+            <!-- mainContent end --> 
+        </div>
+    </div>
+    <div id="footer"> <a href="javascript:void(0)" id="toTop"></a>
+        <p>© 2003–2017 Dynamsoft. All rights reserved. <a target="_blank" class="bluelink" href="http://www.dynamsoft.com/PrivacyStatement.aspx">Privacy Statement</a> / <a target="_blank" class="bluelink" href="http://www.dynamsoft.com/SiteMap.html">Site Map</a> / <a target="_blank" class="bluelink" href="http://www.dynamsoft.com/">Home</a> / <a target="_blank" class="bluelink" href="http://www.dynamsoft.com/Support/How-to-purchase-Dynamsoft-products.aspx">Purchase</a> / <a target="_blank" class="bluelink" href="http://www.dynamsoft.com/Support/Support.aspx">Support</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+/*sideBar nav*/
+$("#anchorNav li").each(function(index, element) {
+    $(this).click(function(){
+		$("#anchorNav li").removeClass('on');
+		$(this).addClass('on');
+		});
+});;
+/*toTop && sunNav-scroll-fixed*/
+$("#toTop").hide();
+$(window).scroll(function(){
+   var windowScTop = $(window).scrollTop();
+   if (windowScTop>100){
+		$("#toTop").fadeIn();
+	  }else{
+		$("#toTop").fadeOut();
+	  }
+   });
+$("#toTop").click(function(){
+		$('body,html').animate({scrollTop:0},500);
+		return false;		
+	 });
+
+</script>
+</body>
+</html>
