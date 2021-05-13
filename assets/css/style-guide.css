@@ -1,20 +1,27 @@
-html {
+#wrapper {
   min-width: 1200px;
+  max-width: 1679px;
+  margin: auto;
 }
 hr {
   margin-top: 160px;
   margin-bottom: 160px;
 }
 
+h1, .h1 {
+  font-size: 55px;
+  line-height: 70px;
+}
+
 /* layout */
 #sideBar {
-  width: 20%;
+  width: 23%;
   position: fixed;
   top: 0px;
 }
 
 #mainContent {
-  width: 80%;
+  width: 77%;
   float: right;
 }
 
@@ -212,4 +219,45 @@ tr td i.icon-check {
   height: 1.2rem;
   background: url("../images/icons/cursor-choose.svg") no-repeat center center;
   background-size: 100%;
+}
+
+.StreamlineIcons .wrapper i {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: #323234 solid 2px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  background: url(../images/icons/icons-streamline.png);
+  vertical-align: top;
+  position: relative;
+}
+
+.StreamlineIcons .wrapper i span {
+  position: absolute;
+  top: 110px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald-Regular';
+  font-size: 16px;
+}
+
+.BrowsersIcons i, .OSIcons i {
+  font-size: 70px;
+  color: #606060;
+  margin-right: 30px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.BrowsersIcons i span, .OSIcons i span {
+  position: absolute;
+  top: 90px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald-Regular';
+  font-size: 16px;
+  left: 0px;
 }
