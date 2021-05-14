@@ -1,7 +1,21 @@
-#wrapper {
+@media (max-width: 1679px) {
+  html {
+    font-size: 8px;
+  }
+}
+body {
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 200px;
+}
+#wrapper, .logoWrapper {
   min-width: 1200px;
   max-width: 1679px;
   margin: auto;
+  font-family: OpenSans-Regular;
 }
 hr {
   margin-top: 160px;
@@ -13,11 +27,24 @@ h1, .h1 {
   line-height: 70px;
 }
 
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+i.zip-file {
+  background-image: url(../images/icons/zip-file.svg);
+}
+
 /* layout */
 #sideBar {
-  width: 23%;
+  width: inherit;
   position: fixed;
-  top: 0px;
+  top: 200px;
 }
 
 #mainContent {
@@ -37,9 +64,71 @@ h1, .h1 {
 #sideBar li a {
   color: #323234;
 }
-#sideBar li.on a {
+#sideBar li a.on {
   color: #fe8e14;
 }
+
+/* logos */
+#Company-Logo {
+  font-size: 0px;
+}
+
+#Company-Logo > div {
+  width: 48%;
+  height: 280px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#Company-Logo > div:first-of-type {
+  margin-right: 4%;
+}
+
+#Company-Logo > div img {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.downloadZip {
+  display: inline-block;
+  padding: 10px;
+  width: 320px;
+}
+.downloadZip p {
+  margin: 0px;
+}
+
+.downloadZip i {
+  height: 60px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin-right: 20px;
+}
+.logo-horizontal {
+  font-size: 0px;
+}
+.logo-horizontal > div {
+  width: 50%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 80px;
+  background-size: contain;
+}
+
+.logo-small img {
+  margin-right: 40px;
+}
+
+
 
 /* color palette */
 .colorPaletteTable {
@@ -75,7 +164,7 @@ h1, .h1 {
 
 .primary-button-section > div {
   padding: 50px 0px 50px 9.8%;
-  width: 40%;
+  width: 50%;
 }
 
 .d-btn {
@@ -132,19 +221,16 @@ h1, .h1 {
 
 /* form & table */
 .basicForm {
-  width: 46.6%;
   display: inline-block;
   margin-right: 20px;
-  background: #f5f5f5;
   box-sizing: border-box;
   vertical-align: top;
   max-width: 536px;
   padding: 80px 70px;
   min-height: 805px;
 }
-
-.basicForm:last-of-type {
-  background: #323234;
+#Form-Table {
+  font-size: 0px;
 }
 .basicForm h3 {
   margin: 0px;
@@ -162,6 +248,8 @@ h1, .h1 {
   border-radius: 0;
 }
 
+
+
 @media (max-width: 1679px) {
   .basicForm {
     min-height: 765px;
@@ -171,6 +259,13 @@ h1, .h1 {
     margin-bottom: 60px;
   }
 }
+
+@media (max-width: 1500px) {
+  #Form-Table .leftCard {
+    width: 100%;
+  }
+}
+
 #Form-Table table {
   width: 100%;
   border-collapse: collapse;
@@ -260,4 +355,207 @@ tr td i.icon-check {
   font-family: 'Oswald-Regular';
   font-size: 16px;
   left: 0px;
+}
+
+i.macos {
+  background: url(../images/icons/macos.svg) no-repeat;
+  background-size: contain;
+  height: 65px;
+  width: 56px;
+  background-position-y: 12px;
+}
+
+.basicFeature {
+  width: 500px;
+  min-width: 500px;
+  display: inline-block;
+}
+
+.basicFeature i.featureBox {
+  display: block;
+}
+
+.card-hover {
+  box-shadow: 0px 0px 0 0.01px #323234;
+  transition: ease-in-out 0.2s all;
+  position: relative;
+}
+.hovering {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px 0 0 #323234;
+}
+
+.card-hover.big-card:hover, .big-card.hovering {
+  transform: translate(20px, -20px);
+  box-shadow: -20px 20px 0 0 #323234;
+}
+
+
+.basicFeature .featureBox .featureBoxBottom {
+  min-height: 320px;
+  box-sizing: content-box;
+}
+
+.functionBox {
+  /* width: 100%; */
+  width: 475px;
+  height: auto;
+  min-height: 400px;
+  background: #F5F5F5;
+  padding: 75px 75px 0 85px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.functionBox h3 {
+  margin: 0px;
+}
+
+.functionBox i, .blumineBlock i {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  position: absolute;
+  border: 2px solid black;
+  top: -40px;
+  background-color: white;
+}
+
+.leftCard {
+  width: 50%;
+}
+
+.icon-scanner { background: url('../images/icons/scanner.svg') no-repeat center center; 
+  background-size: 60%;}
+
+.downloadsItem {
+  display: inline-block;
+  width: 507px;
+  height: 233px;
+  background: #F5F5F5;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  vertical-align: bottom;
+  padding: 26px 23px 30px 26px;
+  position: relative;
+}
+.downloadsItem .fa-circle {
+  font-size: 46px;
+  color: #CCCCCC;
+  float: right;
+}
+.downloadsItem .fa-check-circle {
+  /* display: none; */
+  font-size: 46px;
+  color: #FE8E14;
+  float: right;
+}
+
+i.dwt-logo {
+  display: inline-block;
+  width: 265px;
+  height: 45px;
+  background: url(../images/icons/product-logo-SVG/DNT_Horizontal_Black.svg) no-repeat left;
+  background-size: contain;
+}
+.downloadsItem .version {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-top: 24px;
+}
+.downloadsItem p {
+  font-size: 24px;
+  line-height: 34px;
+  padding-left: 7px;
+}
+
+.blumineBlock {
+  display: inline-block;
+  position: relative;
+  width: 504px;
+  height: 313px;
+  padding: 67px 50px 45px 42px;
+  margin-right: 80px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  background: #306877;
+}
+
+.blumineBlock .title {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Oswald-Regular';
+  margin: 0px;
+}
+.blumineBlock .disc {
+  margin-bottom: 30px;
+}
+.whitePlayBtn {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid #fe8e14;
+  background: #fe8e1440;
+  display: inline-block;
+  padding: 0px;  
+}
+.whitePlayBtn::after {
+  border-left-color: #fe8e14;
+}
+
+/* spacing */
+.spacingContainer {
+  font-size: 0px;
+}
+.spacingContainer .functionBox{
+  padding: 7.5rem 7.5rem 0 8.5rem;
+}
+.spacingContainer .functionBox{
+  width: 38rem;
+  display: inline-block;
+  margin-right: 5.1rem;
+}
+.spacingContainer .functionBox:last-child {
+  margin-right: 0px;
+}
+
+/* illustrations */
+.illustrations {
+  height: 450px;
+  max-width: 990px;
+  background-color: #F5F5F5;
+  margin-top: 120px;
+  position: relative;
+}
+
+.illustrations img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* footer */
+#footer {
+  background-color: #323234;
+  height: 124px;
+  color: white;
+}
+#footer p {
+  font-size: 24px;
+  line-height: 124px;
+}
+#footer a {
+  color: white;
 }

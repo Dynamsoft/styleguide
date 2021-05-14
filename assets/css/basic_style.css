@@ -188,51 +188,6 @@
 .basicFeaturePage .technicalBox table.technicalTable tr:first-child td { font-size: 1.8rem; line-height: 4rem; }
 .basicFeaturePage .technicalBox table.technicalTable tr td .icon-check { display: inline-block; width: 1.4rem;height: 1.2rem;background: url('../images/icons/cursor-choose.svg') no-repeat center center;background-size: 100%; }
 
-@media (max-width: 1679px) {
-  .basicFeature .featureBox { width: 100%; max-width: 45rem; transition: ease-in-out 0.2s all; }
-  .basicFeature .featureBox .featureBoxBottom {padding: 3.8rem 4.5rem 3rem;}
-  .basicFeature .featureBox .featureBoxBottom .cnt { font-size: 2rem; }
-
-  .basicSwiper .ant-carousel .slick-slide .slide-left {width: 66rem;}
-
-  .basicVolume .volumeLeft { padding-top: 10rem; }
-  .basicVolume p {font-size: 2rem;}
-  .basicVolume .volumeList li { width: 27rem; margin-right: 4.6rem; }
-
-  .basicFAQBox .faqList > li::before { top: 19px; }
-  .basicFAQBox .faqList > li.on::before { top: 6px; }
-
-  .productMenu .menuList li { font-size: 16px; }
-  .productSubMenuWrap .subMenuCnt { padding: 30px 40px 20px 40px; }
-
-  .basicCustomers .customer-logos li  { display: inline-block; margin-right: 57px; }
-}
-
-@media (max-width: 1199.98px) {
-  .basicFeature .featureBox {width: 100%;}
-  .basicFeature .featureBox .featureBoxBottom {padding: 2.8rem 2.5rem 0;}
-  .basicFeature .featureBox .featureBoxBottom .cnt {font-size: 16px;}
-
-  .basicSwiper .ant-carousel .slick-slide .slide-left {width: 50rem;}
-  .basicSwiper .ant-carousel .slick-slide .slide-left .personWords { font-size: 16px; }
-  .basicSwiper .ant-carousel .slick-slide .slide-right div {position: relative;width: 35.8rem;height: 23.3rem;background-size: 76%!important;}
-  .basicSwiper .ant-carousel .slick-slide .slide-right div i { left: 125px; }
-
-  .basicVolume .volumeLeft { padding-top: 8rem; }
-  .basicVolume p {font-size: 1.8rem;}
-  .basicVolume .volumeList li { width: 21rem; margin-right: 5.6rem; }
-
-  .basicResourceList li div { max-width: 29rem; height: 9.5rem; line-height: 9.5rem;font-size: 20px; }
-  .basicResourceList li span.icon { width: 7rem;height: 7rem;left: 1.4rem;top: 1.2rem; }
-  .basicFAQBox .faqList > li { padding-right: 5rem; }
-  .basicFAQBox .faqList > li::before { top: 19px; }
-  .basicFAQBox .faqList > li.on::before { top: 6px; }
-  .basicFAQBox .faqList > li .question { font-size: 18px; }
-  .basicFAQBox .faqList > li .answer { font-size: 16px; }
-  .basicResourceBottom p { font-size: 16px; }
-
-  .basicCustomers .customer-logos li  { display: inline-block; margin-right: 31px; }
-}
 
 @media (max-width: 991.98px) {
   .basicFeature .featureBox { margin: 0 auto; }
